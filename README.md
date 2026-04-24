@@ -1,16 +1,32 @@
-# React + Vite
+# Verdant Halal - Restaurant Finder Finland 🍽️🕌
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive React web application that helps users find Halal restaurants across Finland. Built as a frontend-only task, this application fetches data directly from a public Google Sheet (CSV) and displays it on a dynamic map with custom filtering.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Interactive Map:** Built with React Leaflet, featuring custom SVG map pins that change color based on Halal status (Certified/Verified vs. Halal Friendly).
+* **"Near Me" Geolocation:** Uses the browser's native geolocation API to fly the map to the user's current location.
+* **Live Search & Filtering:** Filter restaurants by typing a name/city or by clicking category pills (e.g., Turkish, Arab, Syrian). The map and list update instantly.
+* **Modern UI/UX:** Fully responsive design built with Tailwind CSS, featuring smooth animations, custom scrollbars, and high-quality Lucide vector icons.
+* **No Backend Needed:** Parses CSV data directly from a published Google Sheet URL using the native Fetch API.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Framework:** React + Vite
+* **Styling:** Tailwind CSS
+* **Map:** React Leaflet & Leaflet Core
+* **Icons:** Lucide React
+* **Data Fetching:** Native JavaScript Fetch API & custom CSV Parser
 
-## Expanding the ESLint configuration
+## 🚀 How to Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To get this project up and running on your local machine, follow these steps:
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/ShakoorHussain/halal-restaurant-finder.git](https://github.com/ShakoorHussain/halal-restaurant-finder.git)
